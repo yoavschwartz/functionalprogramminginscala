@@ -1,4 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/ex1.scala:34:7: only traits and abstract classes can have declared but undefined members[0m
-[0m[[0m[31merror[0m] [0m[0m  def compose[A,B,C](f: B => C, g: A => B): A => B {[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:115:62: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m    foldRight(ds, Nil: List[Int])((d, acc) => Cons(d.toString(), acc))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:115:14: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[Int][0m
+[0m[[0m[31merror[0m] [0m[0m required: List[String][0m
+[0m[[0m[31merror[0m] [0m[0m    foldRight(ds, Nil: List[Int])((d, acc) => Cons(d.toString(), acc))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

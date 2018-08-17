@@ -1,11 +1,27 @@
 [0m[[0m[0minfo[0m] [0m[0mPackaging /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/functional-programming-in-scala_2.12-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/scala/main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main/scala/main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Nil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Nil.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Cons$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Cons$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	List.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/List.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	List$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/List$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Nil$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Nil$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main/scala[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main/scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	main/scala/main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main/scala/main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main/scala/main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main/scala/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Cons.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Cons.class[0m
 [0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
