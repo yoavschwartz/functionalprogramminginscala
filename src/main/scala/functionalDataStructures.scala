@@ -1,7 +1,13 @@
+import List.{foldLeft, foldRight}
+import Tree.fold
 
 sealed trait List[+A]
 case object Nil extends List[Nothing]
 case class Cons[+A](head: A, tail: List[A]) extends List[A]
+
+sealed trait Tree[+A]
+case class Leaf[A](value: A) extends Tree[A]
+case class Branch[A](left: Tree[A], right: Tree[A]) extends Tree[A]
 
 object List {
   def apply[A](as: A*): List[A] =
@@ -167,9 +173,67 @@ object List {
 
 }
 
+object Tree {
+  def size[A](t: Tree[A]): Int = {
+    t match {
+      case Leaf(_) => 1
+      case Branch(l, r) => 1 + size(l) + size(r)
+    }
+  }
+
+  def maximum(t: Tree[Int]): Int = {
+    t match {
+      case Leaf(x) => x
+      case Branch(l, r) => maximum(l) max maximum(r)
+    }
+  }
+
+  def maxDepth[A](t: Tree[A]): Int = {
+    t match {
+      case Leaf(_) => 0
+      case Branch(l, r) => (maxDepth(l) + 1) max (maxDepth(r) + 1)
+    }
+  }
+
+  def map[A,B](t: Tree[A])(f: A => B): Tree[B] = {
+    t match {
+      case Leaf(x) => Leaf(f(x))
+      case Branch(l, r) => Branch(map(l)(f), map(r)(f))
+    }
+  }
+
+  def fold[A,B](t: Tree[A])(f: (A) => B)(g: (B, B) => B): B = {
+    t match {
+      case Leaf(x) => f(x)
+//        foldLeft(xs, f(z,x))(f)
+//        f(x, foldRight(xs, z)(f))
+      case Branch(left, right) => g(fold(left)(f)(g),fold(right)(f)(g))
+    }
+  }
+
+  def sizeWithFold[A](t: Tree[A]): Int = {
+    fold(t)(_ => 1)(_ + _ + 1)
+  }
+
+  def maximumWithFold(t: Tree[Int]): Int = {
+    fold(t)(a => a)(math.max(_,_))
+  }
+
+  def maxDepthWithFold[A](t: Tree[A]): Int = {
+    fold(t)(_ => 0)((b1: Int, b2: Int) => 1 + math.max(b1,(b2)))
+  }
+
+  def mapWithFold[A,B](t: Tree[A])(f: A => B): Tree[B] = {
+    val first: A => Tree[B] = (a: A) => Leaf(f(a))
+    fold(t)(first)(Branch(_, _))
+  }
+}
+
+
 object main {
   def main(args: Array[String]): Unit = {
 //    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
-    println(List.hasSubsequence(List(1,2,3,4,5), List(1,2,3,4,5,6)))
+    val tree = Branch(Branch(Leaf(1),Branch(Branch(Leaf(2), Leaf(7)), Leaf(3))), Leaf(4))
+    println(Tree.mapWithFold(tree)(_ + 1))
   }
 }
