@@ -119,12 +119,57 @@ object List {
     foldRight(as, Nil: List[B])((a, acc) => Cons(f(a), acc))
   }
 
+  def filter[A](as: List[A])(p: A => Boolean): List[A] = {
+    foldRight(as, Nil: List[A]) ((a, z) =>
+      if (p(a)) Cons(a, z)
+      else z
+    )
+  }
+
+  def flatMap[A](as: List[A])(f: A => List[A]): List[A] = {
+    foldRight(as, Nil: List[A]) ((a: A, z: List[A]) => {
+      val aList = f(a)
+      append2(aList, z)
+    })
+  }
+
+  def filterInFlatmap[A](as: List[A])(p: A => Boolean): List[A] = {
+      flatMap(as) ((a) => {
+        if (p(a)) List(a)
+        else Nil
+  })
+  }
+
+  def addElementsFromLists(l1: List[Int], l2: List[Int]): List[Int] = {
+        (l1, l2) match {
+          case (Nil, _) => Nil
+          case (_, Nil) => Nil
+          case (Cons(h1, t1), Cons(h2, t2)) => Cons(h1+h2, addElementsFromLists(t1, t2))
+        }
+  }
+
+  def zipWith[A,B](l1: List[A], l2: List[B]): List[(A,B)] = {
+    (l1, l2) match {
+      case (Nil, _) => Nil
+      case (_, Nil) => Nil
+      case (Cons(h1, t1), Cons(h2, t2)) => Cons((h1, h2), zipWith(t1, t2))
+    }
+  }
+
+  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = {
+    (sup, sub) match {
+      case (Cons(_, _), Nil) => true
+      case (Nil, Cons(_, _)) => false
+      case (Nil, Nil) => true
+      case (Cons(h1, t1), Cons(h2, t2)) => (hasSubsequence(t1, t2) && (h1 == h2)) || hasSubsequence(t1, sub)
+    }
+  }
 
 }
 
 object main {
   def main(args: Array[String]): Unit = {
 //    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
-    println(List.doublesToStrings(List(1,2,3)))
+    println(List.hasSubsequence(List(1,2,3,4,5), List(1,2,3,4,5,6)))
   }
 }

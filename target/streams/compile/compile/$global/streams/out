@@ -1,11 +1,67 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:115:62: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : String[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m    foldRight(ds, Nil: List[Int])((d, acc) => Cons(d.toString(), acc))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:115:14: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : List[Int][0m
-[0m[[0m[31merror[0m] [0m[0m required: List[String][0m
-[0m[[0m[31merror[0m] [0m[0m    foldRight(ds, Nil: List[Int])((d, acc) => Cons(d.toString(), acc))[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:61:5: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m    case Nil => z[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:62:5: illegal start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    case Cons(x, xs) => f(x, foldRight(xs, z)(f))[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:66:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def length[A](as: List[A]): Int = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:71:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def foldLeft[A,B](as: List[A], z: B)(f: (B, A) => B): B =[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:78:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def sumFoldl(as: List[Int]): Int = foldLeft(as, 0)(_ + _)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:81:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def productFoldl(as: List[Int]): Int = foldLeft(as, 1)(_ * _)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:84:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def lengthFoldl[A,B](as: List[A]): Int = foldLeft(as, 0)((acc: Int, _) => acc + 1)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:86:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def reverse[A](as: List[A]): List[A] = foldLeft(as, Nil: List[A])((acc, x) => Cons(x, acc))[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:88:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def foldRightInTermsOfFoldLeft[A,B](as: List[A], z: B)(f: (A, B) => B): B = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:92:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def foldLeftInTermsOfFoldRight[A,B](as: List[A], z: B)(f: (B, A) => B): B = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:97:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def append[A](as: List[A], a: A): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:102:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def append2[A](l1: List[A], l2: List[A]): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:106:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def concat[A](listOfLists: List[List[A]]): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:110:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def transformPlus1(ns: List[Int]): List[Int] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:114:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def doublesToStrings(ds: List[Double]): List[String] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:118:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def map[A,B](as: List[A])(f: A => B): List[B] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:122:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def filter[A](as: List[A])(p: A => Boolean): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:129:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def flatMap[A](as: List[A])(f: A => List[A]): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:136:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def filterInFlatmap[A](as: List[A])(p: A => Boolean): List[A] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:143:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def addElementsFromLists(l1: List[Int], l2: List[Int]): List[Int] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:151:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def zipWith[A,B](l1: List[A], l2: List[B]): List[(A,B)] = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:159:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  def hasSubsequence[A](sup: List[A], sub: List[A]): Boolean = {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m22 errors found[0m

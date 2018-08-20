@@ -35,8 +35,8 @@ object main {
     (a: A) => f(g(a))
   }
 
-  def main(args: Array[String]): Unit = {
-    def funct (a: Int): Int = { a + 1  }
-      println(compose(funct, funct)(2))
-    }
+//  def main(args: Array[String]): Unit = {
+//    def funct (a: Int): Int = { a + 1  }
+//      println(compose(funct, funct)(2))
+//    }
 }
