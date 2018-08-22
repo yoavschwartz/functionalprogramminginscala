@@ -2,52 +2,41 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functional error handling.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/None.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/None$.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main$.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/main.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Option.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Some$.class, /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes/Some.class)[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Nil, NilTree, Tree, main, Leaf, Cons, Branch, List)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Option, None, Some, main)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functional error handling.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Nil, NilTree, Tree, main, Leaf, Cons, Branch, List)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Option, None, Some, main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functional error handling.scala)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.1:compile for Scala 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.1:compile for Scala 2.12.6[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 6cede10e for Scala compiler version 2.12.6[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 293d9f59 for Scala compiler version 2.12.6[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/yoavschwartz/.sbt/boot/scala-2.12.6/lib/scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/target/scala-2.12/classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.021949959 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.528919029 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from NilTree...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(NilTree)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(NilTree)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(NilTree,ModifiedNames(changes = UsedName(wait,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(productElement,[Default]), UsedName(synchronized,[Default]), UsedName(equals,[Default]), UsedName(productArity,[Default]), UsedName(productIterator,[Default]), UsedName($isInstanceOf,[Default]), UsedName(!=,[Default]), UsedName($init$,[Default]), UsedName(==,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notify,[Default]), UsedName(NilTree,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(ne,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(canEqual,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(productPrefix,[Default]))) invalidates 1 classes due to The NilTree has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(wait,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(productElement,[Default]), UsedName(synchronized,[Default]), UsedName(equals,[Default]), UsedName(productArity,[Default]), UsedName(productIterator,[Default]), UsedName($isInstanceOf,[Default]), UsedName(!=,[Default]), UsedName($init$,[Default]), UsedName(==,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notify,[Default]), UsedName(NilTree,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(ne,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(canEqual,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(productPrefix,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(NilTree)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> [0m
-[0m[[0m[0mdebug[0m] [0m[0m	> [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Tree...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(Tree)[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding Leaf by Tree[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding Branch by Tree[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Tree, Leaf, Branch)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Tree,ModifiedNames(changes = UsedName(fold,[Default]), UsedName(Tree,[Default]))) invalidates 3 classes due to The Tree has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(fold,[Default]), UsedName(Tree,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Tree, Leaf, Branch)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from seq...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(seq)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(seq)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(seq,ModifiedNames(changes = UsedName(getClass,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(hashCode,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(seq,[Default]), UsedName(toString,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName($isInstanceOf,[Default]), UsedName(variance,[Default]), UsedName(isInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(synchronized,[Default]), UsedName(notify,[Default]), UsedName($asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(eq,[Default]), UsedName(clone,[Default]), UsedName(wait,[Default]))) invalidates 1 classes due to The seq has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(getClass,[Default]), UsedName(asInstanceOf,[Default]), UsedName(ne,[Default]), UsedName(hashCode,[Default]), UsedName(##,[Default]), UsedName(==,[Default]), UsedName(seq,[Default]), UsedName(toString,[Default]), UsedName(finalize,[Default]), UsedName(equals,[Default]), UsedName($isInstanceOf,[Default]), UsedName(variance,[Default]), UsedName(isInstanceOf,[Default]), UsedName(!=,[Default]), UsedName(synchronized,[Default]), UsedName(notify,[Default]), UsedName($asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(eq,[Default]), UsedName(clone,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(seq)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	> [0m
 [0m[[0m[0mdebug[0m] [0m[0m	> [0m
 [0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set(Leaf, Branch)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(Leaf, Branch)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m

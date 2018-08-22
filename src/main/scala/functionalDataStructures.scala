@@ -230,10 +230,10 @@ object Tree {
 }
 
 
-object main {
-  def main(args: Array[String]): Unit = {
-//    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
-    val tree = Branch(Branch(Leaf(1),Branch(Branch(Leaf(2), Leaf(7)), Leaf(3))), Leaf(4))
-    println(Tree.mapWithFold(tree)(_ + 1))
-  }
-}
+//object main {
+//  def main(args: Array[String]): Unit = {
+////    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
+//    val tree = Branch(Branch(Leaf(1),Branch(Branch(Leaf(2), Leaf(7)), Leaf(3))), Leaf(4))
+//    println(Tree.mapWithFold(tree)(_ + 1))
+//  }
+//}

@@ -1,7 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:210:48: too many arguments (2) for method fold: (t: Tree[A])(f: A => B)(g: (B, B) => B)B[0m
-[0m[[0m[31merror[0m] [0m[0m      case Branch(left, right) => g(fold(left, z)(f)(g),fold(right, z)(f)(g))[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functional error handling.scala:44:48: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Double[0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.collection.GenTraversableOnce[?][0m
+[0m[[0m[31merror[0m] [0m[0m        mean(xs.flatMap((x: Double) => math.pow(x - ogMean, 2))))[0m
 [0m[[0m[31merror[0m] [0m[0m                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/yoavschwartz/IdeaProjects/Functional Programming in Scala/src/main/scala/functionalDataStructures.scala:210:69: too many arguments (2) for method fold: (t: Tree[A])(f: A => B)(g: (B, B) => B)B[0m
-[0m[[0m[31merror[0m] [0m[0m      case Branch(left, right) => g(fold(left, z)(f)(g),fold(right, z)(f)(g))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
