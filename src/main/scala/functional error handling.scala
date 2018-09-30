@@ -46,9 +46,9 @@ object seq {
   }
 }
 
-object main {
-  def main(args: Array[String]): Unit = {
-    //    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
-
-  }
-}
+//object main {
+//  def main(args: Array[String]): Unit = {
+//    //    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
+//
+//  }
+//}

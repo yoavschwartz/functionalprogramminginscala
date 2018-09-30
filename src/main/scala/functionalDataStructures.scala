@@ -171,6 +171,18 @@ object List {
     }
   }
 
+  def pascal(n: Int): List[Int] = {
+    n match {
+      case 0 => Nil
+      case 1 => Cons(1, Nil)
+      case 2 => Cons(1, Cons(1, Nil))
+      case _ =>
+        val x = pascal(n-1)
+        val zipped: List[Int] = map(zipWith(x, tail(x))) ( tuple => tuple._1 + tuple._2)
+        Cons(1, append(zipped,1))
+    }
+  }
+
 }
 
 object Tree {
@@ -205,8 +217,6 @@ object Tree {
   def fold[A,B](t: Tree[A])(f: (A) => B)(g: (B, B) => B): B = {
     t match {
       case Leaf(x) => f(x)
-//        foldLeft(xs, f(z,x))(f)
-//        f(x, foldRight(xs, z)(f))
       case Branch(left, right) => g(fold(left)(f)(g),fold(right)(f)(g))
     }
   }
@@ -232,8 +242,7 @@ object Tree {
 
 //object main {
 //  def main(args: Array[String]): Unit = {
-////    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
-//    val tree = Branch(Branch(Leaf(1),Branch(Branch(Leaf(2), Leaf(7)), Leaf(3))), Leaf(4))
-//    println(Tree.mapWithFold(tree)(_ + 1))
+//    //    val result = List.foldLeft(List(3,2,1), Nil: List[Int])(Cons(_,_))
+//    println(List.pascal(5))
 //  }
 //}
